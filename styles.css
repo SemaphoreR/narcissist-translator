@@ -1,0 +1,48 @@
+body { 
+    color: #421; 
+    font-weight: bold; 
+    font-size: 18px; 
+    font-family: "font-family: 'Hina Mincho', serif;";
+    background: white; 
+}
+::-webkit-input-placeholder { 
+    color: #711 
+}
+#main { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    margin: 0 auto;
+}
+
+#main div { 
+    margin: 10px;
+}
+#input { 
+    border: 1px solid #421; 
+}
+ @media only screen and (min-width: 500px) {
+ #input {
+    height: 200px;
+    width: 400px;
+   } 
+ @media only screen and (max-width: 500px) {
+ #input {
+    height: 50vh;
+    width: 80vw;
+   } 
+}
+#button {
+    padding: 10px;
+}
+#translation {
+    height: 10em;
+    width: 45em; 
+}
+@media only screen and (max-width: 500px) {
+ #translation {
+    height: auto;
+    width: 80vw;
+  } }}
