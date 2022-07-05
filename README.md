@@ -1,6 +1,6 @@
 # Narcissist Translator
 
-A browser-based translator built with HTML, CSS, and JavaScript.
+A browser-based translator built with HTML, CSS, and JavaScript. Use it [here](https://k-eversole.github.io/narcissist-translator/).
 
 The purpose of this project is to give whoever is using it a well-needed laugh and to point out that, no matter what pretty words and sentiments a narcissist uses to try to get back in contact, it all boils down to the same self-centered arguments.
 
