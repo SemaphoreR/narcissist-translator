@@ -38,26 +38,27 @@ let loveBomb = function() {
   "if I lovebomb you enough will you give me access to that sweet sweet N-supply ",
   "maybe if I say the word 'love' enough you'll forget that I'm an abusive monster ",
   "combination lovebomb/guilt-trip "]
-  finalString = response[rand(3)]
+  finalString += response[rand(3)]
 }
 let insertBlahs = function() {
   let ranN = (rand(10) + 1);
-if (ranN === 10) { 
-  finalString += "harrumph ";
-} else if (ranN >= 5) {
-  finalString += "blah ";
-} else console.log("We did nothing here");
+  if (ranN === 10) {
+    finalString += "harrumph ";
+  } else if (ranN >= 5) {
+    finalString += "blah ";
+  } else {
+// nothing
+  }
 }
 
 let narcTranslator = function() {
   let string = document.getElementById("input").value;
     string = string.toLowerCase();
-    let noPunctuation = string.replace(/[.,\/#!$%\^&\*;:{}=\?-_`~()]/g,"");
-    let readyForArray = noPunctuation.replace(/\s{2,}/g," ");
-    const stringArray = readyForArray.split(" ");
-    let meString = "it's all about ";
-    for (i = 0; i < stringArray.length; i++) {
-      let word = stringArray[i];
+    let removePunctuation = string.replace(/[.,\/#!$%\^&\*;:{}=\?-_`~()]/g,"");
+    let array = removePunctuation.replace(/\s{2,}/g," ").split(" ");
+    let meString = "it's all about MEEEEE";
+    for (i = 0; i < array.length; i++) {
+      let word = array[i];
         switch(word) {
           case "me":
           case "my":
