@@ -5,6 +5,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Mono:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+
     <title>Narcissist Translator</title>
 
     <link rel="stylesheet" href="styles.css"/>
@@ -13,7 +17,7 @@
 <body>
     <div class="main">
         <div id="header">
-            <div id="header-top"></div>
+            <div id="header-top">
                 <img id="logo" src="/icons/logo.png" alt="Stick figure head wearing an enormous frown, like a narcissist confronted with evidence that the world does not, in fact, revolve around them.">
                 <h1 id="header_title">Narcissist Translator</h1>
                 <div id="dropdown">
@@ -24,44 +28,42 @@
                         Angry Face logo courtesy of <a href="https://www.flaticon.com/free-icon/angry_135809">flatiron</a>.</p>
                     </div>
                 </div>
+            </div>
             <div id="header-bottom"></div>
         </div>
 
-        <div id="translator-box">
-            <div id="textbox-proper">
+        <div id="below-header">
+        <div id="translator-wrapper">
+            <div id="textbox-wrapper">
                 <div id="textbox-header">
-                    <h2 id="header-left">Narcissist</h2>
-                    <h2 id="header-right">English</h2>
+                    <h2 class="translate-header">NARCISSIST</h2>
+                    <h2 class="translate-header">ENGLISH</h2>
                 </div>
-                <div class="single-textbox" id="textbox-left">
-                    <textarea id="input" name="text-input" rows="2" cols="10" placeholder="Copy and paste your narcissist's texts and/or emails here."></textarea>
-                </div>
-                <div class="single-textbox" id="textbox-right">
-                    <textarea id="output" name="text-output" rows="2" cols="10" placeholder="Output"></textarea>
+                <div id="input-output-wrapper">
+                    <textarea class="single-textbox" id="input" name="text-input" rows="2" cols="10" placeholder="Copy and paste your narcissist's texts and/or emails here."></textarea>
+                    <textarea class="single-textbox" id="output" name="text-output" rows="2" cols="10"></textarea>
                 </div>
             </div>
             <div id="feedback-link">
                 <span id="trap-button">Send feedback</span>
                 <div class="feedback-rant">
-                    <p>Insert Narcissistic Rant Here</p>
+                    <p></p>
                 </div>
             </div>
         </div>
 
         <div id="buttons">
-            <div class="small-button" id="reset">
+            <div class="button" id="reset">
                 <input type="image" id="reset-button" title="Reset Button" src="/icons/undo.png">
-                <h3>Reset</h3>
             </div>
-            <div class ="large button" id="translate">
+            <div class ="button" id="translate">
                 <input type="image" id="translate-button" title="Translate Button" src="/icons/play.png">
-                <h3>Translate</h3>
             </div>
-            <div class="small-button" id="mode-change">
-                <input type="image" id="mode-button" title="Mode Change Button" src="/icons/rattle.png">
-                <h3>Enable Toddler Mode</h3>
+            <div class="button" id="mode-change">
+                <input type="image" id="mode-button" title="Mode Change Button" src="/icons/pacifier.png">
             </div>
         </div>
+    </div>
     </div>
 </body>
 
