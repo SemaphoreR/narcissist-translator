@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Mono:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+
+    <title>Narcissist Translator</title>
+
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <div class="main">
+        <div id="header">
+            <div id="header-top">
+                <img id="logo" src="/icons/logo.png" alt="Stick figure head wearing an enormous frown, like a narcissist confronted with evidence that the world does not, in fact, revolve around them.">
+                <h1 id="header_title">
+                    <span class="blue">Narcissist</span> Translator</h1>
+                <div id="dropdown">
+                    <input type="image" id="credits-button" title="Credits" src="/icons/menu.png">
+                    <div id="dropdown-content">
+                        <p>Reset, Translate, Mode Change, and Menu Buttons courtesy of <a href="https://icons8.com">Icons8</a>.
+                        <br><br>
+                        Angry Face logo courtesy of <a href="https://www.flaticon.com/free-icon/angry_135809">flatiron</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="header-bottom"></div>
+        </div>
+
+        <div id="below-header">
+        <div id="translator-wrapper">
+            <div id="textbox-wrapper">
+                <div id="textbox-header">
+                    <h2 class="translate-header">NARCISSIST</h2>
+                    <h2 class="translate-header">ENGLISH</h2>
+                </div>
+                <div id="input-output-wrapper">
+                    <textarea class="single-textbox" id="input" name="text-input" rows="2" cols="10" placeholder="Copy and paste your narcissist's texts and/or emails here."></textarea>
+                    <textarea class="single-textbox" id="output" name="text-output" rows="2" cols="10"></textarea>
+                </div>
+            </div>
+            <div id="feedback-button">
+                <span id="trap-button">Send feedback</span>
+                <div class="feedback-rant">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <div class="button" id="reset">
+                <input type="image" id="reset-button" title="Reset Button" src="/icons/undo.png">
+            </div>
+            <div class ="button" id="translate">
+                <input type="image" id="translate-button" title="Translate Button" src="/icons/play.png">
+            </div>
+            <div class="button" id="mode-change">
+                <input type="image" id="mode-button" title="Mode Change Button" src="/icons/pacifier.png">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="index.js"></script>
