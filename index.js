@@ -129,13 +129,23 @@ let reset = function() {
   finalString = ""
 }
 
-let narcAlarm = function() {
-  alert("Did you just try to give me feedback?\n\n" +
-  "Did you HONESTLY just try to give me feedback!?\n\n" +
-  "After EVERYTHING I've done for you, you come back and criticize me!? ME!????\n\n" +
-  "How dare you come at me with this unprovoked personal attack! Just wait until your father hears about this!\n\n" +
-  "(Insert huge blubbering hysterics)")
+const popup = document.querySelector(".popup");
+const trigger = document.querySelector("#feedback-button");
+const closeButton = document.querySelector("#close-button");
+
+function togglePopup() {
+    popup.classList.toggle("show-popup");
 }
+
+function windowOnClick(event) {
+    if (event.target === popup) {
+        togglePopup();
+    }
+}
+
+trigger.addEventListener("click", togglePopup);
+closeButton.addEventListener("click", togglePopup);
+window.addEventListener("click", windowOnClick);
 
 let toggleMode = function() {
     alert("Toddler mode coming soon!");
@@ -145,4 +155,3 @@ let toggleMode = function() {
   document.getElementById("reset-button").addEventListener ("click", reset, false);
   document.getElementById("translate-button").addEventListener ("click", narcTranslator, false);
   document.getElementById("mode-change").addEventListener("click", toggleMode, false);
-  document.getElementById("feedback-button").addEventListener ("click", narcAlarm, false);

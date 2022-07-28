@@ -16,8 +16,10 @@ body {
 #header-top {
     display: flex;
     flex-direction: row;
+    position: relative;
     height: 5rem;
     align-items: center;
+    z-index: 2;
 }
 
 #logo {
@@ -32,6 +34,11 @@ h1{
 
 .blue {
     color:rgb(64, 108, 255);
+}
+
+.red {
+    color:rgb(131, 0, 0);
+    font-size: 3em;
 }
 
 #dropdown {
@@ -54,7 +61,6 @@ h1{
     transform: translateX(-70%);
     width: 10rem;
     padding: 5px 10px 5px 10px;
-    z-index: 2;
 }
 
 #dropdown:hover #dropdown-content {
@@ -77,7 +83,6 @@ h1{
     flex-direction: column;
     width: 50rem;
     margin: auto;
-    z-index: 1;
 }
 
 #textbox-wrapper {
@@ -135,6 +140,58 @@ h1{
     font-style: italic;
     color: rgb(141, 141, 141);
     cursor:pointer;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 40rem;
+    border-radius: 0.5rem;
+}
+
+#close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+#close-button:hover {
+    background-color: darkgray;
+}
+
+.show-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 5;
+}
+
+#tantrum {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
 }
 
 #buttons {
