@@ -5,6 +5,9 @@
     --main-border:  solid rgb(212, 212, 212);
     --secondary-color: white;
     --tertiary-color: white;
+    --feedback-color: rgb(141, 141, 141);
+    --feedback-style: italic;
+    --feedback-weight: normal;
 }
 
 [data-theme="toddler"] {
@@ -14,6 +17,10 @@
     --main-border: solid rgb(255, 238, 0);
     --secondary-color: rgb(0, 197, 89);
     --tertiary-color: rgb(189, 0, 72);
+    --feedback-color: white;
+    --feedback-style: none;
+    --feedback-weight: bold;
+
 }
 
 body {
@@ -153,12 +160,12 @@ input:checked + .slider:before {
 #translator-wrapper {
     display: flex;
     flex-direction: column;
-    height: 25rem;
     width: 50rem;
     margin: auto;
 }
 
 #textbox-wrapper {
+    height: 25rem;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 2em;
     background-color: #ffffff;
@@ -214,10 +221,14 @@ input:checked + .slider:before {
     position: relative;
     text-align: right;
     font-size: small;
-    font-style: italic;
-    color: rgb(141, 141, 141);
+    font-style: var(--feedback-style);
+    font-weight: var(--feedback-weight);
+    color: var(--feedback-color);
     cursor:pointer;
     background-color: var(--tertiary-color);
+    padding: 5px 3px 3px 3px;
+    margin-top: 2px;
+    border-radius: 10px;
 }
 
 .popup {
@@ -248,6 +259,7 @@ input:checked + .slider:before {
     position: absolute;
     display: flex;
     justify-content: center;
+    font-family: 'Open Sans', serif;
     right: 1.5rem;
     width: 1.5rem;
     height: 1.5rem;
