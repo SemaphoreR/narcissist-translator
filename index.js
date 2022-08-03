@@ -147,11 +147,21 @@ trigger.addEventListener("click", togglePopup);
 closeButton.addEventListener("click", togglePopup);
 window.addEventListener("click", windowOnClick);
 
-let toggleMode = function() {
-    alert("Toddler mode coming soon!");
+
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'toddler');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
 }
 
-
+toggleSwitch.addEventListener('change', switchTheme, false);
   document.getElementById("reset-button").addEventListener ("click", reset, false);
   document.getElementById("translate-button").addEventListener ("click", narcTranslator, false);
-  document.getElementById("mode-change").addEventListener("click", toggleMode, false);
+  document.getElementById("mode-change").addEventListener("click", changeTheme, false);
+

@@ -25,16 +25,16 @@
                 <img id="logo" src="icons/logo.png" alt="Stick figure head wearing an enormous frown, like a narcissist confronted with evidence that the world does not, in fact, revolve around them.">
                 <h1 id="header_title">
                     <span class="blue">Narcissist</span> Translator</h1>
-                <div id="dropdown">
-                    <input type="image" id="credits-button" title="Credits" src="icons/menu.png">
-                    <div id="dropdown-content">
-                        <p>Reset, Translate, Mode Change, and Menu Buttons courtesy of <a href="https://icons8.com">Icons8</a>.
-                        <br><br>
-                        Angry Face logo courtesy of <a href="https://www.flaticon.com/free-icon/angry_135809">flatiron</a>.</p>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox"/>
+                        <div class="slider round"></div>
+                    </label>
                     </div>
+
                 </div>
             </div>
-            <div id="header-bottom"></div>
+            <div id="header-bottom" class="header-bottom"></div>
         </div>
 
         <div id="below-header">
@@ -49,17 +49,20 @@
                     <textarea class="single-textbox" id="output" name="text-output" rows="2" cols="10"></textarea>
                 </div>
             </div>
-            <div id="feedback-button">Send feedback</div>
-            <div class="popup">
-                <div id="popup-content">
-                    <span id="close-button">&times;</span>
-                    <p>Did you just try to give me feedback?</p>
-                    <p>Did <em>you</em> just try to give <em>me</em> feedback!?</p>
-                    <p>After <em>everything</em> I've done for you, you come back and <em>criticize me!?</em></p>
-                    <p>I raised you, fed you, put clothes on your back, and <em>this</em> is how you repay me!? With <em>LOGIC</em> and <em>CONSTRUCTIVE CRITICISM</em> like I'm not already <em>PERFECT?</em></p>
-                    <p>Just wait until your <em>father</em> hears about this!</p>
+            <div id="feedback-box">
+                <div id="feedback-button">Send feedback</div>
+                <div class="popup">
+                    <div id="popup-content">
+                        <span id="close-button">&times;</span>
+                        <p>Did you just try to give me feedback?</p>
+                        <p>Did <em>you</em> just try to give <em>me</em> feedback!?</p>
+                        <p>After <em>everything</em> I've done for you, you come back and <em>criticize me!?</em></p>
+                        <p>I raised you, fed you, put clothes on your back, and <em>this</em> is how you repay me!? With <em>LOGIC</em> and <em>CONSTRUCTIVE CRITICISM</em> like I'm not already <em>PERFECT?</em></p>
+                        <p>Just wait until your <em>father</em> hears about this!</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                </div>
         </div>
 
         <div id="buttons">
@@ -69,8 +72,14 @@
             <div class ="button" id="translate">
                 <input type="image" id="translate-button" title="Translate Button" src="icons/play.png">
             </div>
-            <div class="button" id="mode-change">
-                <input type="image" id="mode-button" title="Mode Change Button" src="icons/pacifier.png">
+            <div class="button" id="dropdown">
+                <input type="image" id="credits-button" title="Credits" src="icons/menu.png">
+                    <div id="dropdown-content">
+                        <p>Reset, Translate, Mode Change, and Menu Buttons courtesy of <a href="https://icons8.com">Icons8</a>.
+                        <br><br>
+                        Angry Face logo courtesy of <a href="https://www.flaticon.com/free-icon/angry_135809">flatiron</a>.</p>
+                    </div>
+            </div>
             </div>
         </div>
     </div>
