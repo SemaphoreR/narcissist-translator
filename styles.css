@@ -295,7 +295,7 @@ input:checked + .slider:before {
     background-color: #ffffff;
     border: 1px solid rgb(212, 212, 212);
     top: 50%;
-    transform: translateX(12%);
+    transform: translateX(11%);
     width: 10rem;
     padding: 5px 10px 5px 10px;
 }

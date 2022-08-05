@@ -136,7 +136,7 @@ let reset = function() {
 document.getElementById("reset-button").addEventListener ("click", reset, false);
 document.getElementById("translate-button").addEventListener ("click", narcTranslator, false);
 
-//popup functions and listeners
+//popup
 const popup = document.querySelector(".popup");
 const trigger = document.querySelector(".feedback-button");
 const closeButton = document.querySelector(".close-button");
@@ -156,7 +156,7 @@ closeButton.addEventListener("click", togglePopup);
 window.addEventListener("click", windowOnClick);
 
 
-//theme switch functions and listeners
+//theme change
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 function switchTheme(e) {
