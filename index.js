@@ -151,14 +151,18 @@ function windowOnClick(event) {
   }
 }
 
+const audio = new Audio("audio/error.mp3");
+
 trigger.addEventListener("click", togglePopup);
+trigger.addEventListener("click", () => {
+  audio.play()
+});
 closeButton.addEventListener("click", togglePopup);
 window.addEventListener("click", windowOnClick);
 
 
-//theme change
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
+//theme change
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'toddler');
@@ -167,5 +171,7 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'normal');
     }
 }
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 toggleSwitch.addEventListener('change', switchTheme, false);

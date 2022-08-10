@@ -24,33 +24,31 @@
 
 body {
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
     background-image: var(--background-image);
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     margin: 0;
 }
 
 .main {
-    height: 100vh;
+    min-height: 100vh;
 }
-
 
 .header-top {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    height: 5rem;
+    height: 80px;
     z-index: 2;
 }
 
 #logo {
     height: 50px;
     width: 50px;
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 24px 0 24px;
 }
 
 h1{
@@ -123,28 +121,27 @@ input:checked + .slider:before {
     background-color: var(--main-color);
     border: var(--main-border);
     border-width: 1px 0 1px 0;
-    height: 7rem;
+    height: 112px;
 }
 
 .below-header {
     position: relative;
-    top: -2rem;
+    top: -32px;
 }
 
 .translator-wrapper {
     display: flex;
     flex-direction: column;
-    width: 50rem;
+    width: 800px;
     margin: auto;
 }
 
 .textbox-wrapper {
     background-color: #ffffff;
-    filter: drop-shadow(0px 0px 0.2rem rgb(212, 212, 212));
+    filter: drop-shadow(0px 0px 8px rgb(212, 212, 212));
     overflow: hidden;
-    height: 25rem;
     border: 1px solid rgb(212, 212, 212);
-    border-radius: 2em;
+    border-radius: 24px;
 }
 
 .textbox-header {
@@ -152,7 +149,7 @@ input:checked + .slider:before {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 3.5rem;
+    height: 56px;
 }
 
 .translate-header {
@@ -166,7 +163,7 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: row;
     border-top: 1px solid rgb(212, 212, 212);
-    height: 20rem;
+    height: 320px;
     width: 100%;
 }
 
@@ -179,7 +176,7 @@ input:checked + .slider:before {
     background-color: transparent;
     resize: none;
     outline: none;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 16px 32px 16px 32px;
 }
 
 #input {
@@ -201,6 +198,7 @@ input:checked + .slider:before {
     color: var(--feedback-color);
     cursor:pointer;
     background-color: var(--tertiary-color);
+    height: 12px;
     padding: 5px 3px 3px 3px;
     margin-top: 2px;
     border-radius: 10px;
@@ -221,10 +219,10 @@ input:checked + .slider:before {
     position: absolute;
     color: rgb(161, 0, 0);
     background-color: white;
-    border: 0.5rem solid rgb(161, 0, 0);
-    border-radius: 2rem;
-    width: 32rem;
-    padding: 1rem 2rem;
+    border: 8px solid rgb(161, 0, 0);
+    border-radius: 16px;
+    width: 512px;
+    padding: 16px 32px;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -236,11 +234,11 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     font-family: 'Open Sans', serif;
-    right: 1.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    right: 24px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    border-radius: 0.25rem;
+    border-radius: 2px;
     background-color: lightgray;
 }
 
@@ -252,7 +250,6 @@ input:checked + .slider:before {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     z-index: 2;
 }
 
@@ -265,10 +262,10 @@ input:checked + .slider:before {
 
 .button{
     background: var(--secondary-color);
-    padding: 1rem;
+    padding: 16px;
     border-radius: 100px;
     border: 2px solid rgb(212, 212, 212);
-    margin: 0 1.5rem 0 1.5rem;
+    margin: 0 24px 0 24px;
 }
 
 .button:hover {
@@ -295,7 +292,7 @@ input:checked + .slider:before {
     border: 1px solid rgb(212, 212, 212);
     top: 50%;
     transform: translateX(11%);
-    width: 10rem;
+    width: 160px;
     padding: 5px 10px 5px 10px;
 }
 
